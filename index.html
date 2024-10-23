@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike. Just Do It. Nike IN </title>
+  <link rel="stylesheet" href="Style/style.css">
+  <link rel="icon" href="Assets/fav-icon.jpg" type="image/x-icon">
+
+  <!-- Link SwiperJS in CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Link to Google Fonts icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Link to Box-icons -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+
+  <!-- Top Navabr Start Here -->
+  <div class="top-navbar">
+    <div class="top-navbar__nav-container">
+      <ul >
+        <li class="top-navbar__logo1"><a href="#"><img src="Assets/Nike-logo1.svg" alt=""></a></li>
+        <li><a href=""><p>Find a Store</p></a></li>
+        <li><p>|</p></li>
+        <li><a href=""><p>Help</p></a></li>
+        <li><p>|</p></li>
+        <li><a href=""><p>Join Us</p></a></li>
+        <li><p>|</p></li>
+        <li><a href="login.html"><p>Sign In</p></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Top Navbar Ends Here -->
+
+  <!-- Main Navbar Start Here -->
+
+  <header class="header">
+
+    <div class="header__container">
+
+      <div class="header__container--1">
+        <img src="Assets/Nike-logo2.svg" alt="">
+      </div>
+
+      <div class="header__container--2">
+        <ul >
+          <li class="hideOnMobile"> <a href="">New & Featured</a></li>
+          <li class="hideOnMobile"> <a href="">Men</a> </li>
+          <li class="hideOnMobile"> <a href="">Women</a> </li>
+          <li class="hideOnMobile"> <a href="">Kids</a> </li>
+          <li class="hideOnMobile"> <a href="">Sale</a> </li>
+          <li class="hideOnMobile"> <a href="">Customise</a> </li>
+          <li class="hideOnMobile"> <a href="">SNKRS</a> </li>
+        </ul>
+        <div class="sidebar">
+          <ul>
+            <li onclick="HideSidebar(event)"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111111"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li> <a href="">New & Featured</a></li>
+            <li> <a href="">Men</a> </li>
+            <li> <a href="">Women</a> </li>
+            <li> <a href="">Kids</a> </li>
+            <li> <a href="">Sale</a> </li>
+            <li> <a href="">Customise</a> </li>
+            <li> <a href="">SNKRS</a> </li>
+          </ul>
+
+          <div class="sidebar__logo">
+            <img src="Assets/Nike-logo1.svg" alt=""> <span>Jordan</span>
+          </div>
+
+          <h4>Become a Nike Member for the best products, inspiration and stories in sport.<a  href="https://www.nike.com/in/membership">Learn more</a></h4>
+
+          <span>
+            <button class="btn1">Join Us</button>
+            <button class="btn2">Sign In</button>
+          </span>
+        </div>
+      </div>
+
+      <div class="header__container--3">
+        <div class="header__container--3__search-box">
+          <span>
+            <svg class="header__container--3--svg-icons search" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"/></svg>
+            <input type="text" name="" id="" placeholder="Search">
+          </span>
+          <svg class="header__container--3--svg-icons hidden-search" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"/></svg>
+
+          <svg class="header__container--3--svg-icons" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"/></svg>
+
+          <a href="cart.html">
+            <svg class="header__container--3--svg-icons" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"/></svg>
+          </a>
+
+          <svg class="menu-btn" onclick="ShowSidebar(event)" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111111"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Call to action Start Here -->
+
+  <div class="call-to-action">
+    <div class="call-to-action__container">
+      <p class="call-to-action__p1-tag">New Style On Sale: Up To 40% Off</p>
+      <p class="call-to-action__p2-tag">Shop All Our New Markdowns</p>
+    </div>
+  </div>
+
+  <!-- Call to action End Here -->
+
+  <!-- Banner Start Here -->
+
+  <section class="banner">
+    <div class="banner__video">
+      <video src="Assets/video.mp4" autoplay loop></video>
+    </div>
+  </section>
+
+  <div class="banner__heading">
+      <p class="banner__heading--1">Nike Running</p>
+      <p class="banner__heading--2"> WINNING ISN'T COMFORTABLE</p>
+      <p class="banner__heading--3">If you don't hate running a little, you don't love running enough.</p>
+      <button class="banner__heading--4">Shop Running</button>
+  </div>
+
+  <!-- Banner End Here -->
+
+  <section class="featured">
+    <div class="featured__head">
+      <p>Featured</p>
+      <span>
+        <i class='bx bx-chevron-left' ></i>
+        <i class='bx bx-chevron-right' ></i>
+      </span>
+    </div>
+
+    <div class="slider-container">
+      <div class="slider">
+        <div class="card">
+          <div class="card__img-container">
+            <img src="Assets/f1.png" alt="">
+          </div>
+          <div class="card__detail">
+            <p>Train Like LeBron in the TR1</p>
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img-container">
+            <img src="Assets/f2.png" alt="">
+          </div>
+          <div class="card__detail">
+            <p>Performance For Every Terrain</p>
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img-container">
+            <img src="Assets/f3.png" alt="">
+          </div>
+          <div class="card__detail">
+            <p>Sabrina 2</p>
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img-container">
+            <img src="Assets/f4.png" alt="">
+          </div>
+          <div class="card__detail">
+            <p>Giannis Freak 6'Naija'</p>
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img-container">
+            <img src="Assets/f5.jpeg" alt="">
+          </div>
+          <div class="card__detail">
+            <p>EasyOn</p>
+            <button>Shop</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <div class="featured__head">
+      <p>Classic Spotlight</p>
+      <span>
+        <i class='bx bx-chevron-left' ></i>
+        <i class='bx bx-chevron-right' ></i>
+      </span>
+    </div>
+
+    <div class="container swiper">
+      <div class="card-wrapper ">
+        <ul class="card-list swiper-wrapper">
+          <!-- Card 1 -->
+           <div class="card-item swiper-slide">
+            <img src="Assets/c1.png" alt="" class="card-image">
+           </div>
+  
+          <!-- Card 2 -->
+          <div class="card-item swiper-slide">
+            <img src="Assets/c2.png" alt="" class="card-image">
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card-item swiper-slide">
+            <img src="Assets/c3.png" alt="" class="card-image">
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card-item swiper-slide">
+            <img src="Assets/c4.png" alt="" class="card-image">
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card-item swiper-slide">
+            <img src="Assets/c5.png" alt="" class="card-image">
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card-item swiper-slide">
+            <img src="Assets/c6.png" alt="" class="card-image">
+          </div>
+
+          <!-- Card 7 -->
+          <div class="card-item swiper-slide">
+            <img src="Assets/c7.png" alt="" class="card-image">
+          </div>
+
+          <!-- Card 8 -->
+          <div class="card-item swiper-slide">
+            <img src="Assets/c8.png" alt="" class="card-image">
+          </div>
+
+          <!-- Card 9 -->
+          <div class="card-item swiper-slide">
+            <img src="Assets/c9.jpg" alt="" class="card-image">
+          </div>
+
+          <!-- Card 10 -->
+          <div class="card-item swiper-slide">
+            <img src="Assets/c10.png" alt="" class="card-image">
+          </div>
+
+        </ul>
+  
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+  
+        <!-- If we need navigation buttons -->
+        <div class="swiper-btn swiper-button-prev"></div>
+        <div class="swiper-btn swiper-button-next"></div>        
+      </div>
+    </div>
+
+  </section>
+  
+  <section class="featured">
+    <div class="featured__head">
+      <p>Shop by Sport</p>
+      <span>
+        <i class='bx bx-chevron-left' ></i>
+        <i class='bx bx-chevron-right' ></i>
+      </span>
+    </div>
+
+    <div class="slider-container">
+      <div class="slider">
+        <div class="card-shop">
+          <div class="card-shop__img-container">
+            <img src="Assets/s1.jpg" alt="">
+          </div>
+          <div class="card-shop__detail">
+            
+            <button>Running</button>
+          </div>
+        </div>
+        <div class="card-shop">
+          <div class="card-shop__img-container">
+            <img src="Assets/s2.jpg" alt="">
+          </div>
+          <div class="card-shop__detail">
+            <button>Football</button>
+          </div>
+        </div>
+        <div class="card-shop">
+          <div class="card-shop__img-container">
+            <img src="Assets/s3.jpg" alt="">
+          </div>
+          <div class="card-shop__detail">
+            <button>Basketball</button>
+          </div>
+        </div>
+        <div class="card-shop">
+          <div class="card-shop__img-container">
+            <img src="Assets/s4.jpg" alt="">
+          </div>
+          <div class="card-shop__detail">
+            <button>Training & Gym</button>
+          </div>
+        </div>
+        <div class="card-shop">
+          <div class="card-shop__img-container">
+            <img src="Assets/s5.jpg" alt="">
+          </div>
+          <div class="card-shop__detail">
+            <button>Tennis</button>
+          </div>
+        </div>
+        <div class="card-shop">
+          <div class="card-shop__img-container">
+            <img src="Assets/s6.jpg" alt="">
+          </div>
+          <div class="card-shop__detail">
+            <button>Yoga</button>
+          </div>
+        </div>
+        <div class="card-shop">
+          <div class="card-shop__img-container">
+            <img src="Assets/s7.jpg" alt="">
+          </div>
+          <div class="card-shop__detail">
+            <button>Skateboarding</button>
+          </div>
+        </div>
+        <div class="card-shop">
+          <div class="card-shop__img-container">
+            <img src="Assets/s8.jpg" alt="">
+          </div>
+          <div class="card-shop__detail">
+            <button>Dance</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- New This Week -->
+
+  <section class="featured">
+    <div class="featured__head">
+      <p>New This Week</p>
+      <span>
+        <i class='bx bx-chevron-left' ></i>
+        <i class='bx bx-chevron-right' ></i>
+      </span>
+    </div>
+
+    <div class="slider-container">
+      <div class="slider">
+        <div class="week">
+          <div class="week__img-container">
+            <img src="Assets/n1.png" alt="">
+          </div>
+          <div class="week__detail">
+            <p class="week__detail--p-red">Member product</p>
+            <p class="week__detail--p-black">Nike V2K Run GORE-TEX</p>
+            <p class="week__detail--p-gray">Women's Waterproof Shoes</p>
+            <p class="week__detail--p-black week__detail--price">MRP:₹ 13 995.00</p>
+          </div>
+        </div>
+        <div class="week">
+          <div class="week__img-container">
+            <img src="Assets/n2.png" alt="">
+          </div>
+          <div class="week__detail">
+            <p class="week__detail--p-black">Nike V2K Run GORE-TEX</p>
+            <p class="week__detail--p-gray">Women's Waterproof Shoes</p>
+            <p class="week__detail--p-black week__detail--price">MRP:₹ 13 995.00</p>
+          </div>
+        </div>
+        <div class="week">
+          <div class="week__img-container">
+            <img src="Assets/n3.png" alt="">
+          </div>
+          <div class="week__detail">
+            <p class="week__detail--p-black">Nike V2K Run GORE-TEX</p>
+            <p class="week__detail--p-gray">Women's Waterproof Shoes</p>
+            <p class="week__detail--p-black week__detail--price">MRP:₹ 13 995.00</p>
+          </div>
+        </div>
+        <div class="week">
+          <div class="week__img-container">
+            <img src="Assets/n4.png" alt="">
+          </div>
+          <div class="week__detail">
+            <p class="week__detail--p-black">Nike V2K Run GORE-TEX</p>
+            <p class="week__detail--p-gray">Women's Waterproof Shoes</p>
+            <p class="week__detail--p-black week__detail--price">MRP:₹ 13 995.00</p>
+          </div>
+        </div>
+        <div class="week">
+          <div class="week__img-container">
+            <img src="Assets/n5.png" alt="">
+          </div>
+          <div class="week__detail">
+            <p class="week__detail--p-black">Nike V2K Run GORE-TEX</p>
+            <p class="week__detail--p-gray">Women's Waterproof Shoes</p>
+            <p class="week__detail--p-black week__detail--price">MRP:₹ 13 995.00</p>
+          </div>
+        </div>
+        <div class="week">
+          <div class="week__img-container">
+            <img src="Assets/n6.png" alt="">
+          </div>
+          <div class="week__detail">
+            <p class="week__detail--p-red">Member product</p>
+            <p class="week__detail--p-black">Nike V2K Run GORE-TEX</p>
+            <p class="week__detail--p-gray">Women's Waterproof Shoes</p>
+            <p class="week__detail--p-black week__detail--price">MRP:₹ 13 995.00</p>
+          </div>
+        </div>
+        <div class="week">
+          <div class="week__img-container">
+            <img src="Assets/n7.png" alt="">
+          </div>
+          <div class="week__detail">
+            <p class="week__detail--p-black">Nike V2K Run GORE-TEX</p>
+            <p class="week__detail--p-gray">Women's Waterproof Shoes</p>
+            <p class="week__detail--p-black week__detail--price">MRP:₹ 13 995.00</p>
+          </div>
+        </div>
+        <div class="week">
+          <div class="week__img-container">
+            <img src="Assets/n8.png" alt="">
+          </div>
+          <div class="week__detail">
+            <p class="week__detail--p-red">Member product</p>
+            <p class="week__detail--p-black">Nike V2K Run GORE-TEX</p>
+            <p class="week__detail--p-gray">Women's Waterproof Shoes</p>
+            <p class="week__detail--p-black week__detail--price">MRP:₹ 13 995.00</p>
+          </div>
+        </div>
+        <div class="week">
+          <div class="week__img-container">
+            <img src="Assets/n9.png" alt="">
+          </div>
+          <div class="week__detail">
+            <p class="week__detail--p-black">Nike V2K Run GORE-TEX</p>
+            <p class="week__detail--p-gray">Women's Waterproof Shoes</p>
+            <p class="week__detail--p-black week__detail--price">MRP:₹ 13 995.00</p>
+          </div>
+        </div>
+        <div class="week">
+          <div class="week__img-container">
+            <img src="Assets/n10.png" alt="">
+          </div>
+          <div class="week__detail">
+            <p class="week__detail--p-black">Nike V2K Run GORE-TEX</p>
+            <p class="week__detail--p-gray">Women's Waterproof Shoes</p>
+            <p class="week__detail--p-black week__detail--price">MRP:₹ 13 995.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Don't Miss -->
+
+  <section class="featured">
+    <div class="featured__head">
+      <p>Don't Miss</p>
+    </div>
+    <div class="dm-img">
+      <img src="Assets/dm.jpg" alt="">
+    </div>
+    <div class="banner__heading">
+      <p class="banner__heading--1">Jordan Apparel</p>
+      <div><p class="banner__heading--2">PARIS SAINT-GERMAN COLLECTION</p></div>
+      <p class="banner__heading--3">Rep the beautiful game in this statement-making collaboration between Jordan and France's top soccer club.</p>
+      <button class="banner__heading--4">Shop</button>
+  </div>
+  </section>
+
+  <section class="featured">
+    <div class="featured__head">
+      <p>Member Benefits</p>
+      <span>
+        <i class='bx bx-chevron-left' ></i>
+        <i class='bx bx-chevron-right' ></i>
+      </span>
+    </div>
+
+    <div class="slider-container">
+      <div class="slider">
+        <div class="member">
+          <div class="member__img-container">
+            <img src="Assets/mb1.jpg" alt="">
+          </div>
+          <div class="member__detail">
+            <p class="member__detail--p1">Member Product</p>
+            <p class="member__detail--p2">Your Exclusive Access</p>
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member__img-container">
+            <img src="Assets/mb2.png" alt="">
+          </div>
+          <div class="member__detail">
+            <p class="member__detail--p1">Nike by you</p>
+            <p class="member__detail--p2">Your Customisation Service</p>
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member__img-container">
+            <img src="Assets/mb3.jpg" alt="">
+          </div>
+          <div class="member__detail">
+            <p class="member__detail--p1">Member Rewards</p>
+            <p class="member__detail--p2">How We Say Thank You</p>
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member__img-container">
+            <img src="Assets/mb4.png" alt="">
+          </div>
+          <div class="member__detail">
+            <p class="member__detail--p1">Member Days</p>
+            <p class="member__detail--p2">A Celebration of You</p>
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member__img-container">
+            <img src="Assets/mb5.jpg" alt="">
+          </div>
+          <div class="member__detail">
+            <p class="member__detail--p1">Sport & Wellness Apps</p>
+            <p class="member__detail--p2">Movement Where You Are</p>
+            <button>Shop</button>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member__img-container">
+            <img src="Assets/mb6.jpg" alt="">
+          </div>
+          <div class="member__detail">
+            <p class="member__detail--p1">SNKRS</p>
+            <p class="member__detail--p2">Your Ultimate Sneaker <br> Community</p>
+            <button>Shop</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="footer__container">
+      <div class="grid footer__item1">
+        <h4>Icons</h4>
+        <p> <a href="">Air Force 1</a> </p>
+        <p> <a href="">Huarache</a> </p>
+        <p> <a href="">Air Max 90</a> </p>
+        <p> <a href="">Air Max 95</a> </p>
+      </div>
+      <div class="grid footer__item2">
+        <h4>Shoes</h4>
+        <p> <a href="">All Shoes</a> </p>
+        <p> <a href="">Custom Shoes</a> </p>
+        <p> <a href="">Jordan Shoes</a> </p>
+        <p> <a href="">Running Shoes</a> </p>
+      </div>
+      <div class="grid footer__item3">
+        <h4>Clothing</h4>
+        <p> <a href="">All Clothing</a> </p>
+        <p> <a href="">Modest Wear</a> </p>
+        <p> <a href="">Hoodies & Pullover</a> </p>
+        <p> <a href="">Shirts & Tops</a> </p>
+      </div>
+      <div class="grid footer__item4">
+        <h4>Kids'</h4>
+        <p> <a href="">Infant & Toddler Shoes</a> </p>
+        <p> <a href="">Kids' Shoes</a> </p>
+        <p> <a href="">Kids' Jordan Shoes</a> </p>
+        <p> <a href="">Kids' Basketball Shoes</a> </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="line-breaker">
+    <div class="line"></div>
+  </div>
+
+  <div class="main-footer">
+    <div class="main-footer__container">
+      <div class="grid1 main-footer__item1">
+        <h4>Resource</h4>
+        <p> <a href="">Find A Store</a> </p>
+        <p> <a href="">Become A Member</a> </p>
+        <p> <a href="">Send Us Feedback</a> </p>
+      </div>
+      <div class="grid1 main-footer__item2">
+        <h4>Help</h4>
+        <p> <a href="">Get Help</a> </p>
+        <p> <a href="">Order Status</a> </p>
+        <p> <a href="">Delivery</a> </p>
+        <p> <a href="">Returns</a> </p>
+        <p> <a href="">Payment Option</a> </p>
+      </div>
+      <div class="grid1 main-footer__item3">
+        <h4>Company</h4>
+        <p> <a href="">About Nike</a> </p>
+        <p> <a href="">News</a> </p>
+        <p> <a href="">Careers</a> </p>
+        <p> <a href="">Investors</a> </p>
+        <p> <a href="">Sustainability</a> </p>
+      </div>
+      <div class="grid1 main-footer__item4"></div>
+      <div class="grid1 main-footer__item5">
+        <div class="main-footer__item5--india">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="css-npy3on" focusable="false" viewBox="0 0 24 24" role="img" width="16px" height="16px" fill="none"><path stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5" d="M21.75 12A9.75 9.75 0 0112 21.75M21.75 12A9.75 9.75 0 0012 2.25M21.75 12c0 2.071-4.365 3.75-9.75 3.75S2.25 14.071 2.25 12m19.5 0c0-2.071-4.365-3.75-9.75-3.75S2.25 9.929 2.25 12M12 21.75A9.75 9.75 0 012.25 12M12 21.75c2.9 0 5.25-4.365 5.25-9.75S14.9 2.25 12 2.25m0 19.5c-2.9 0-5.25-4.365-5.25-9.75S9.1 2.25 12 2.25M2.25 12A9.75 9.75 0 0112 2.25"/></svg>
+          <span>India</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-footer">
+    <div class="main-footer__right">
+      <p> <span > &#169 2024 Nike, Inc. All rights reserved </span> <span>Guides<i class='bx bx-chevron-down'></i></span> <span>Terms of Sale</span> <span>Terms of Use</span> <span>Nike Privacy Policy</span> </p>
+    </div>
+  </div>
+
+
+
+  <!-- Link SwiperJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
